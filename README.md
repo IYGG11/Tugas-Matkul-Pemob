@@ -15,6 +15,10 @@ Aplikasi Flutter sederhana berupa penghitung (*counter*): setiap kali tombol **+
 | **Mata Kuliah** | Pemrograman Mobile, Pertemuan 9 |
 | **Kampus** | Universitas Esa Unggul, Teknik Informatika |
 
+## Laporan
+
+Laporan praktikum pertemuan ini: [`laporan/Laporan_Pemrograman_Mobile_Pertemuan9_Masyhuri_Yudhistira.pdf`](laporan/Laporan_Pemrograman_Mobile_Pertemuan9_Masyhuri_Yudhistira.pdf)
+
 ## Fitur
 
 Semua kode aplikasi ada di [`lib/main.dart`](lib/main.dart):
@@ -102,6 +106,7 @@ pemmobpert9/
 ├── web/                 # Template web: index.html, manifest.json, ikon
 ├── build/
 │   └── web/             # Hasil `flutter build web`, disajikan oleh Vercel
+├── laporan/             # Laporan praktikum (PDF)
 ├── android/, ios/, linux/, macos/, windows/   # Kode platform bawaan Flutter
 ├── test/
 │   └── widget_test.dart # Widget test bawaan untuk counter
