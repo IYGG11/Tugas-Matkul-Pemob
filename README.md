@@ -18,6 +18,7 @@ riwayat commit dari repo asal tetap tersimpan.
 | [`TugasPemobPert4/`](TugasPemobPert4/) | Pencatatan Stok Barang (Firebase) | [IYGG11/TugasPemobPert4](https://github.com/IYGG11/TugasPemobPert4) |
 | [`Tugas_Layout_Flutter/`](Tugas_Layout_Flutter/) | Kartu Praktikan (layout dasar) | [IYGG11/Tugas_Layout_Flutter](https://github.com/IYGG11/Tugas_Layout_Flutter) |
 | [`PemobPert5/`](PemobPert5/) | Pencatatan Stok Barang (Firebase) | [IYGG11/PemobPert5](https://github.com/IYGG11/PemobPert5) |
+| [`PemobPert8/`](PemobPert8/) | Model User & Admin dengan REST API | Disalin langsung (bukan dari repo Git) |
 
 ### TugasPemobPert4
 
@@ -44,6 +45,22 @@ ukuran logo, jarak, dan warna latar dihitung dari digit NIM.
 
 Package `pertemuan4pemob`. Saat ini isi folder ini sama persis dengan `TugasPemobPert4/`
 (repo asalnya menunjuk ke commit yang sama), yaitu aplikasi Pencatatan Stok Barang.
+
+### PemobPert8
+
+Aplikasi **Model User & Admin dengan REST API** (package `pertemuan_8`). Berisi model
+`User` dan `Admin` dengan `fromJson()`/`toJson()`, service yang memakai package `http`,
+dan halaman dengan dua tab (User dan Admin):
+
+- User: GET daftar dan detail, lalu POST, PUT, PATCH, dan DELETE untuk user ID `1791`.
+- Admin: GET daftar dan detail, lalu DELETE admin ID `1084` dengan dialog konfirmasi.
+- ID dihitung dari NIM: N = `292` (229 dengan angka tengah digeser ke belakang),
+  ID User = 1499 + N, ID Admin = 792 + N.
+- Setiap request menampilkan endpoint, status code, dan response body, termasuk saat gagal (mis. 404).
+
+Backend-nya json-server lokal dengan data di `mock_api/db.json`. Jalankan dari folder
+`PemobPert8/` dengan `npx json-server@0.17.4 --watch mock_api/db.json --port 3000`.
+Laporan lengkap ada di [`LAPORAN_PERTEMUAN_8.md`](PemobPert8/LAPORAN_PERTEMUAN_8.md) dan folder `laporan/`.
 
 ## Cara Membuka
 
