@@ -19,6 +19,7 @@ riwayat commit dari repo asal tetap tersimpan.
 | [`Tugas_Layout_Flutter/`](Tugas_Layout_Flutter/) | Kartu Praktikan (layout dasar) | [IYGG11/Tugas_Layout_Flutter](https://github.com/IYGG11/Tugas_Layout_Flutter) |
 | [`PemobPert5/`](PemobPert5/) | Pencatatan Stok Barang (Firebase) | [IYGG11/PemobPert5](https://github.com/IYGG11/PemobPert5) |
 | [`PemobPert8/`](PemobPert8/) | Model User & Admin dengan REST API | Disalin langsung (bukan dari repo Git) |
+| [`PemobPert9/`](PemobPert9/) | Counter App, deploy Flutter Web ke Vercel | [IYGG11/pertemuan_9_Masyhuri_yudhistira](https://github.com/IYGG11/pertemuan_9_Masyhuri_yudhistira) |
 
 ### TugasPemobPert4
 
@@ -61,6 +62,19 @@ dan halaman dengan dua tab (User dan Admin):
 Backend-nya json-server lokal dengan data di `mock_api/db.json`. Jalankan dari folder
 `PemobPert8/` dengan `npx json-server@0.17.4 --watch mock_api/db.json --port 3000`.
 Laporan lengkap ada di [`LAPORAN_PERTEMUAN_8.md`](PemobPert8/LAPORAN_PERTEMUAN_8.md) dan folder `laporan/`.
+
+### PemobPert9
+
+Aplikasi **Counter** (package `pemmobpert9`) yang di-build sebagai Flutter Web dan di-deploy ke Vercel.
+Halaman utamanya menampilkan angka penghitung yang bertambah 1 setiap kali tombol **+**
+ditekan (`StatefulWidget` + `setState()`).
+
+- Live demo: https://pertemuan9masyhuriyudhistira.vercel.app/
+- Hasil `flutter build web --release` ikut di-commit di `build/web/`, dan Vercel menyajikan
+  folder itu langsung sesuai `vercel.json` (tanpa proses build di server).
+
+Laporan ada di folder [`laporan/`](PemobPert9/laporan/). Detail cara build dan deploy ada di
+[`PemobPert9/README.md`](PemobPert9/README.md).
 
 ## Cara Membuka
 
